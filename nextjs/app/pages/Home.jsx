@@ -73,7 +73,7 @@ const ShortUrl = () => {
               Your shortened links can be used in publications, documents, ads,
               blogs, forums, instant messages, and more. ZapLink offers robust
               tracking features to monitor the number of clicks on your URLs.
-              Whether it's for business or personal use, track and analyze the
+              Whether it&apos;s for business or personal use, track and analyze the
               performance of your shared links to gain valuable insights.
             </p>
           </div>
@@ -81,7 +81,7 @@ const ShortUrl = () => {
       </div>
 
       <div className="px-6 py-16">
-        <div className="container mx-auto w-[80%] text-center">
+        <div className="container mx-auto w-4/5 text-center">
           <h2 className="mb-12 text-4xl font-bold text-black">
             Why Choose ShortURL?
           </h2>

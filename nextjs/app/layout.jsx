@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+
 import { Inter } from "next/font/google";
 import { ThemeModeScript } from "flowbite-react";
 import "./globals.css";

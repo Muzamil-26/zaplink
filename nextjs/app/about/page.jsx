@@ -60,7 +60,7 @@ export default function AboutUs() {
                 Simple & Fast
               </h3>
               <p className="mt-4 text-gray-600">
-                Enter a long link, and in seconds, you'll get your shortened URL
+                Enter a long link, and in seconds, you&apos;ll get your shortened URL
                 ready to share across social media, emails, and more.
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function AboutUs() {
               </h3>
               <p className="mt-4 text-gray-600">
                 Track the number of clicks your shortened URLs receive and gain
-                valuable insights into your audience's behavior and
+                valuable insights into your audience&apos;s behavior and
                 interactions.
               </p>
             </div>
