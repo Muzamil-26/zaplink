@@ -8,9 +8,11 @@ function RegisterForm() {
   const router = useRouter();
   const { data: session, status } = useSession();
 
-  if(session){
-    router.push("/");
-  }
+  useEffect(() => {
+    if (session) {
+      router.push("/"); // Redirect if session exists
+    }
+  }, [session, router]);
 
 
   return (

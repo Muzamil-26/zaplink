@@ -3,8 +3,6 @@ import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from 'next-auth/providers/google';
 import axios from "axios";
 
-
-console.log(process.env.NEXT_PUBLIC_GITHUB_ID)
 const authOptions = NextAuth({
 
   // Configure one or more authentication providers
@@ -24,9 +22,7 @@ const authOptions = NextAuth({
         const response = await axios.post('http://localhost:4000/register', {
           user, // Pass the user details
         });
-  
-        console.log("Response from backend:", response.data);
-  
+    
         return response.data.success; // Allow or deny sign-in based on backend response
       } catch (error) {
         console.error('Error during sign-in:', error);
