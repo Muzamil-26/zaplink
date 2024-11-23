@@ -11,6 +11,6 @@
     }
   },
   "rules": {
-    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/rules-of-hooks": "off"
   }
 }
