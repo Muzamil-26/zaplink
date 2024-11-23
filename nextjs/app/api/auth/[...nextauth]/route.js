@@ -9,11 +9,13 @@ const authOptions = NextAuth({
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_ID,  // Environment variable for GitHub Client ID
-      clientSecret: process.env.GITHUB_SECRET,  // Environment variable for GitHub Secret
+      clientSecret: process.env.GITHUB_SECRET,
+      callbackUrl: `https://zaplink-mu.vercel.app/api/auth/callback/github`, // Environment variable for GitHub Secret
     }),
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,  // Environment variable for Google Client ID
-      clientSecret: process.env.GOOGLE_SECRET,  // Environment variable for Google Secret
+      clientSecret: process.env.GOOGLE_SECRET,
+      callbackUrl: `https://zaplink-mu.vercel.app/api/auth/callback/google`  // Environment variable for Google Secret
     }),
   ],
   callbacks: {
