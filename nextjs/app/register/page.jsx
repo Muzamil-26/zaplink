@@ -8,11 +8,22 @@ function RegisterForm() {
   const router = useRouter();
   const { data: session, status } = useSession();
 
+  // Set the mounted state after the component is mounted
   useEffect(() => {
-    if (session) {
+    setIsMounted(true);
+  }, []);
+
+  // Redirect if session exists (client-side only)
+  useEffect(() => {
+    if (session && isMounted) {
       router.push("/"); // Redirect if session exists
     }
-  }, [session, router]);
+  }, [session, isMounted, router]);
+
+  // Don't render the form until the component is mounted to avoid SSR issues
+  if (!isMounted) {
+    return null;
+  }
 
 
   return (
