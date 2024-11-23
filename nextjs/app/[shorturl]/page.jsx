@@ -16,9 +16,11 @@ export default function Page({ params }) {  // Rename `page` to `Page`
 
         if (res.data.longurl) {
           // Perform the redirect to the long URL using window.location.href
+          console.log(res.data.longurl);
           setoriginalURL(res.data.longurl);
           setloader(true);
           window.location.replace(res.data.longurl);
+
         } else {
           console.error("Slug not found or invalid response");
         }
