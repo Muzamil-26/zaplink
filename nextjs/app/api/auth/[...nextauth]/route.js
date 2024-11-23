@@ -19,7 +19,7 @@ const authOptions = NextAuth({
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
       try {
-        const response = await axios.post('http://localhost:4000/register', {
+        const response = await axios.post('https://zaplink.onrender.com/register', {
           user, // Pass the user details
         });
     

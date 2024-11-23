@@ -10,7 +10,7 @@ export default function Page({ params }) {  // Rename `page` to `Page`
   useEffect(() => {
     const fetchAndRedirect = async () => {
       try {
-        const res = await axios.post("http://localhost:4000/api/redirect", {
+        const res = await axios.post("https://zaplink.onrender.com/api/redirect", {
           slug,
         });
 

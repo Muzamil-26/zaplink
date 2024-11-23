@@ -14,7 +14,7 @@ export default function Page() {
     const randomString = Math.random().toString(36).substring(2, 8);
 
     try {
-      const result = await axios.post("http://localhost:4000/api/zapurl",{
+      const result = await axios.post("https://zaplink.onrender.com/api/zapurl",{
         randomString,
         longUrl,
       });
