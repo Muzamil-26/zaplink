@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+              height="58"
+              viewBox="0 0 24 24"
+              width="58"
+              xmlns="http://www.w3.org/2000/svg"
+              id="icon_81731422995159"
+              data-filename="box.svg"
+            >
+              <path
+                d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"
+                fill="none"
+                stroke="#0f0f0f"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              ></path>
+              <polyline
+                fill="none"
+                points="2.32 6.16 12 11 21.68 6.16"
+                stroke="#0f0f0f"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              ></polyline>
+              <line
+                fill="none"
+                stroke="#0f0f0f"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                x1="12"
+                x2="12"
+                y1="22.76"
+                y2="11"
+              ></line>
+</svg>
