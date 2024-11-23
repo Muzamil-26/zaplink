@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from 'next/compat/router'
 
 function RegisterForm() {
   const router = useRouter();
