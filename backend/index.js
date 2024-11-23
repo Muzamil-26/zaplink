@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors({
-    origin: 'http://localhost:3000', // Adjust this to the correct frontend origin
+    origin: 'https://zaplink-git-main-muzamil-26s-projects.vercel.app', // Adjust this to the correct frontend origin
     credentials: true,
 }));
 app.use(express.json());
