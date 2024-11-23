@@ -5,7 +5,7 @@ import { Button } from "flowbite-react";
 import axios from "axios";
 
 
-export default function page() {
+export default function Page() {
   const [longUrl, setLongUrl] = useState("");
   const [shortUrl, setShortUrl] = useState("");
 
