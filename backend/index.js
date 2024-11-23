@@ -32,6 +32,6 @@ app.use("/",router);
 
 
 app.listen(4000,()=>{
-    ConnectDB("mongodb://127.0.0.1:27017");
+    ConnectDB("mongodb+srv://muzamilkhan2610thc:muzamil___26@muzamilapi.tt0jb.mongodb.net/zaplink");
     console.log(`Server Running On Port 4000`);
 })

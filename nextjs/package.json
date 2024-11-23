@@ -11,12 +11,14 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@floating-ui/dom": "^1.6.12",
+    "@floating-ui/react": "^0.26.28",
     "@heroicons/react": "^2.2.0",
     "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cookies-next": "^4.3.0",
-    "flowbite-react": "^0.8.0",
+    "flowbite-react": "^0.10.2",
     "js-cookie": "^3.0.5",
     "lucide-react": "^0.460.0",
     "next": "14.1.3",

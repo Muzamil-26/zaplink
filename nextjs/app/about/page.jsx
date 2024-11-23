@@ -1,13 +1,11 @@
 "use client";
-
 import Image from "next/image";
-// import zaplinkLogo from "@/public/assets/zaplogo.png";
-import Aboutus from "@/public/assets/4966418.jpg";
+// import Aboutus from "@/public/assets/4966418.jpg";
 import {
   SparklesIcon,
   UserGroupIcon,
   LockClosedIcon,
-} from "@heroicons/react/24/outline"; // Ensure to replace with the actual logo
+} from "@heroicons/react/24/outline";
 
 export default function AboutUs() {
   return (
@@ -15,14 +13,14 @@ export default function AboutUs() {
       <div className="container mx-auto px-6 py-16">
         {/* Hero Section */}
         <div className="mb-16 text-center">
-          <h1 className="bg-gradient-to-r from-indigo-600 to-blue-400 bg-clip-text text-5xl font-extrabold text-transparent font-['IBM Plex Mono']">
+          <h1 className="bg-gradient-to-r from-indigo-600 to-blue-400 bg-clip-text text-5xl font-extrabold text-transparent">
             About Us
           </h1>
         </div>
 
         {/* Company Description */}
         <div className="mb-16 flex flex-col items-center justify-center gap-4 lg:flex-row">
-          <div className="mainpara w-full text-center lg:w-[60%] lg:text-left">
+          <div className="w-full text-center lg:w-3/5 lg:text-left">
             <p className="max-w-3xl text-xl text-gray-700">
               ZapLink is a fast, secure, and easy-to-use URL shortener service
               designed to help businesses and individuals shorten, track, and
@@ -30,7 +28,7 @@ export default function AboutUs() {
             </p>
           </div>
           <Image
-            src={Aboutus}
+            src="/assets/4966418.jpg"
             alt="ZapLink Logo"
             width={500}
             height={500}
@@ -53,7 +51,7 @@ export default function AboutUs() {
 
         {/* Benefits */}
         <div className="flex items-center justify-center">
-          <div className="grid w-[100%] gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid w-full gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="transform rounded-xl bg-white p-6 text-center shadow-lg transition duration-300 hover:scale-105">
               <div className="mb-6 flex items-center justify-center">
                 <SparklesIcon className="h-16 w-16 text-blue-500" />
@@ -102,7 +100,7 @@ export default function AboutUs() {
             Have any questions or suggestions? Feel free to reach out to us at{" "}
             <a
               href="mailto:muzamilkhan.26.10thc@gmail.com"
-              className="text-blue-500 ibm"
+              className="text-blue-500"
             >
               muzamilkhan.26.10thc@gmail.com
             </a>
