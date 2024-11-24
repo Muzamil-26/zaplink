@@ -17,7 +17,7 @@ const ShortUrl = () => {
   return (
     <>
 <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-[30px] px-5 py-[9.5rem] text-black lg:flex-row">
-  <div className="left flex max-w-[600px] flex-col justify-center gap-4 text-center lg:text-left">
+  <div className="left flex max-w-[600px] flex-col justify-center gap-4">
     <h1 className="text-5xl">Zap Link</h1>
     <p>ZapLink Shorten Links, Expand Your Reach.</p>
     <div className="buttons mt-4 flex flex-col gap-5 sm:flex-row sm:justify-center lg:justify-start lg:flex-row">
@@ -39,7 +39,7 @@ const ShortUrl = () => {
     </div>
   </div>
 
-  <div className="middle flex flex-col items-center justify-center mt-8 w-full lg:mt-0 lg:max-w-[600px]">
+  <div className="middle flex flex-col items-center justify-center mt-8 w-full lg:mt-0 lg:max-w-[500px]">
     <Image
       src={shorturlLogo}
       alt="Ecommerce Img"
