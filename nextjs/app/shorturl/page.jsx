@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Button } from "flowbite-react";
 import axios from "axios";
 
-
 export default function Page() {
   const [longUrl, setLongUrl] = useState("");
   const [shortUrl, setShortUrl] = useState("");
@@ -14,26 +13,28 @@ export default function Page() {
     const randomString = Math.random().toString(36).substring(2, 8);
 
     try {
-      const result = await axios.post("https://zaplink.onrender.com/api/zapurl",{
-        randomString,
-        longUrl,
-      });
-      if(!result){
+      const result = await axios.post(
+        "https://zaplink.onrender.com/api/zapurl",
+        {
+          randomString,
+          longUrl,
+        },
+      );
+      if (!result) {
         console.log("Error while recieving result from backend");
       }
 
-      console.log("Rersult ",result);
+      console.log("Rersult ", result);
     } catch (error) {
       console.log("Error while Posat request using axios");
     }
-
 
     setShortUrl(`https://zaplink-ten.vercel.app/${randomString}`);
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-50">
-      <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-lg">
+    <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4">
+      <div className="w-full max-w-md rounded-lg bg-white p-6 shadow-lg sm:p-8">
         <h1 className="mb-6 text-center text-2xl font-semibold text-blue-600">
           Shorten Your URL
         </h1>
@@ -51,16 +52,10 @@ export default function Page() {
           <Button color="blue" onClick={generateShortUrl}>
             Generate Short URL
           </Button>
-          {/* <button
-           
-            className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-all"
-          >
-            Generate Short URL
-          </button> */}
 
           {/* Display the Short URL */}
           {shortUrl && (
-            <div className="mt-4 rounded-md bg-gray-100 p-4 text-center">
+            <div className="mt-4 break-words rounded-md bg-gray-100 p-4 text-center">
               <p className="text-lg text-gray-800">
                 Your shortened URL:{" "}
                 <a
@@ -73,14 +68,9 @@ export default function Page() {
                 </a>
               </p>
             </div>
-            
           )}
         </div>
       </div>
     </div>
   );
 }
-
-
-
-
