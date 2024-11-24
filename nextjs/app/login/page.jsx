@@ -137,7 +137,7 @@ function RegisterForm() {
       <div className="text-center text-black">
         Already have an account?{" "}
         <Link href="/register" className="text-[#3b82f6]">
-          Login
+          Register
         </Link>
       </div>
     </div>
