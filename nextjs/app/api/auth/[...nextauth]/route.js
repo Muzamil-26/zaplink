@@ -4,8 +4,6 @@ import GoogleProvider from 'next-auth/providers/google';
 import axios from "axios";
 
 const authOptions = NextAuth({
-
-  // Configure one or more authentication providers
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_ID,  // Environment variable for GitHub Client ID
@@ -13,8 +11,7 @@ const authOptions = NextAuth({
     }),
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,  // Environment variable for Google Client ID
-      clientSecret: process.env.GOOGLE_SECRET,
-      callbackUrl: `https://zaplink-mu.vercel.app/api/auth/callback/google`  // Environment variable for Google Secret
+      clientSecret: process.env.GOOGLE_SECRET,  // Environment variable for Google Secret
     }),
   ],
   callbacks: {
