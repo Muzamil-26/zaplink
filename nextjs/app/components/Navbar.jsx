@@ -74,10 +74,7 @@ export function NavbarComponent() {
                   {session?.user?.email}
                 </span>
               </Dropdown.Header>
-              <Dropdown.Item>Dashboard</Dropdown.Item>
-              <Dropdown.Item>Cart</Dropdown.Item>
-              <Dropdown.Item>Orders</Dropdown.Item>
-              <Dropdown.Item>Profile Page</Dropdown.Item>
+              <Dropdown.Item>History</Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item onClick={() => signOut()}>Sign out</Dropdown.Item>
             </Dropdown>
