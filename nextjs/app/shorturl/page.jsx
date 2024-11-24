@@ -28,7 +28,7 @@ export default function Page() {
     }
 
 
-    setShortUrl(`https://zaplink-mu.vercel.app/${randomString}`);
+    setShortUrl(`https://zaplink-ten.vercel.app/${randomString}`);
   };
 
   return (
