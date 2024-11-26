@@ -104,7 +104,7 @@ const Page = () => {
             </div>
 
             {/* Clicks Count and Created Date */}
-            <div className="flex flex-col items-center sm:flex-row sm:space-x-3">
+            <div className="flex flex-col sm:flex-row sm:space-x-3">
               <span className="text-lg font-semibold text-gray-800">
                 Clicks:
               </span>
