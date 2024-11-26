@@ -12,7 +12,7 @@ const ShortUrl = mongoose.Schema({
     },
     email:{
         type:String,
-        required:true,
+        default:'',
     },
     clicks:{
         type:Number,
