@@ -10,12 +10,18 @@ const ShortUrl = mongoose.Schema({
         type:String,
         required:true,
     },
+    email:{
+        type:String,
+        required:true,
+    },
     clicks:{
         type:Number,
         default:0,
     },
 
 
+},{
+    timestamps:true,
 });
 
 export const ZapLinkSchema = mongoose.model("ShortURlData",ShortUrl);

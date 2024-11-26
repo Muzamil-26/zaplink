@@ -3,21 +3,23 @@
 import { useState } from "react";
 import { Button } from "flowbite-react";
 import axios from "axios";
+import { useSession } from "next-auth/react";
 
 export default function Page() {
   const [longUrl, setLongUrl] = useState("");
   const [shortUrl, setShortUrl] = useState("");
+  const { data: session } = useSession();
+  const history1 = "muzamilkhan.26.10thc@gmail.com";
 
   const generateShortUrl = async () => {
     if (!longUrl) return alert("Please enter a valid URL.");
     const randomString = Math.random().toString(36).substring(2, 8);
 
     try {
-      const result = await axios.post(
-        "https://zaplink.onrender.com/api/zapurl",
-        {
+      const result = await axios.post("https://zaplink.onrender.com/api/zapurl",{
           randomString,
           longUrl,
+          session,
         },
       );
       if (!result) {

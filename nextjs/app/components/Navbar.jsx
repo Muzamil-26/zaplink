@@ -74,7 +74,7 @@ export function NavbarComponent() {
                   {session?.user?.email}
                 </span>
               </Dropdown.Header>
-              <Dropdown.Item>History</Dropdown.Item>
+              <Link href={"/history"}><Dropdown.Item>History</Dropdown.Item></Link>
               <Dropdown.Divider />
               <Dropdown.Item onClick={() => signOut()}>Sign out</Dropdown.Item>
             </Dropdown>
