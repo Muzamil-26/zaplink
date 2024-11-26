@@ -10,8 +10,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // Use TLS
   auth: {
-    user: "muzamilkhan.26.10thc@gmail.com", // Your email address
-    pass: "cpka msgi pwcq rsvj", // App password (not your Gmail password)
+    user: "Your Gmail", // Your email address
+    pass: "yourAppPassword", // App password (not your Gmail password)
   },
 });
 
