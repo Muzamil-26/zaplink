@@ -7,7 +7,7 @@ export function FooterComponent() {
     <Footer container className="bg-[#fff!important]">
       <div className="w-full text-center">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
-        <Footer.Copyright href="#" by="Flowbite™" year={2022} />
+        <Footer.Copyright href="#" by="ZapLink™" year={2024} />
           <Footer.LinkGroup className="justify-center mt-3">
             <Footer.Link href="#" className="text-[#000000!important]">About</Footer.Link>
             <Footer.Link href="#" className="text-[#000000!important]">Privacy Policy</Footer.Link>
