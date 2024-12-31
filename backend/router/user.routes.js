@@ -3,7 +3,7 @@ const router = express.Router();
 import { HandleRegister } from "../controllers/RegisterControllers.js";
 import { ZapUrl } from "../controllers/ZapUrl.js";
 import {RedirectURL} from '../controllers/RedirectURL.js';
-import { HandleHistory } from "../controllers/HandleHistory.js";
+import { HandleHistory,Handleget } from "../controllers/HandleHistory.js";
 
 router.route("/register").post(HandleRegister);
 router.route("/api/zapurl").post(ZapUrl);
