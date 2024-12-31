@@ -9,5 +9,6 @@ router.route("/register").post(HandleRegister);
 router.route("/api/zapurl").post(ZapUrl);
 router.route("/api/redirect").post(RedirectURL);
 router.route("/api/history").post(HandleHistory);
+router.route("/api/v1/get").get(Handleget);
 
 export default router;
