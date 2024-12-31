@@ -40,3 +40,10 @@ export const HandleHistory = async(req,res)=>{
     }
 
 }
+
+export const Handleget = async(req,res)=>{
+    res.json({
+        message:"Hello bhai ! from handleget request."
+    });
+}
+
